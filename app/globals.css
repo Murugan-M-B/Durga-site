@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-dm-mono: "DM Mono", monospace;
+  --red: #DC2626;
+  --red-light: #EF4444;
+  --red-glow: rgba(220, 38, 38, 0.3);
+  --ink: #0C0C0E;
+  --ink-2: #16161A;
+  --paper: #FAFAF9;
+  --muted: #71717A;
+  --border: #E4E4E7;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 88px;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+  background-color: #FAFAF9;
+  color: #0C0C0E;
+}
+
+/* ============================================
+   TYPOGRAPHY SYSTEM
+   ============================================ */
+.font-display {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.font-body {
+  font-family: var(--font-dm-sans);
+}
+
+.font-mono {
+  font-family: var(--font-dm-mono);
+}
+
+.eyebrow {
+  font-family: var(--font-dm-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.section-heading {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #0C0C0E;
+}
+
+.section-heading-dark {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #0C0C0E;
+}
+
+.container-px {
+  @apply px-5 md:px-10 lg:px-16;
+}
+
+/* ============================================
+   SURFACE & CARD VARIANTS
+   ============================================ */
+.glass-dark {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.glass-red {
+  background: rgba(220, 38, 38, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(220, 38, 38, 0.1);
+}
+
+.card-3d {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-3d::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, rgba(220,38,38,0.03) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card-3d:hover {
+  transform: translateY(-6px) rotateX(2deg);
+  border-color: rgba(220, 38, 38, 0.2);
+  box-shadow:
+    0 0 0 1px rgba(220,38,38,0.05),
+    0 20px 40px rgba(0,0,0,0.06),
+    0 8px 24px rgba(220,38,38,0.04);
+}
+
+.card-3d:hover::before {
+  opacity: 1;
+}
+
+/* ============================================
+   GLOW EFFECTS
+   ============================================ */
+.glow-red {
+  box-shadow:
+    0 0 20px rgba(220,38,38,0.1),
+    0 0 60px rgba(220,38,38,0.05);
+}
+
+.glow-border {
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-border:hover {
+  border-color: rgba(220,38,38,0.25);
+  box-shadow: 0 0 0 1px rgba(220,38,38,0.08), 0 12px 40px rgba(0,0,0,0.08);
+}
+
+/* ============================================
+   ORBS & AMBIENCE
+   ============================================ */
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* ============================================
+   GRAIN TEXTURE
+   ============================================ */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+}
+
+/* ============================================
+   SCROLL BAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAF9;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(220,38,38,0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(220,38,38,0.6);
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+  background: rgba(220,38,38,0.3);
+  color: #fff;
+}
+
+/* ============================================
+   FOCUS RING
+   ============================================ */
+:focus-visible {
+  outline: 2px solid #DC2626;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   IMAGE GALLERY SLIDER
+   ============================================ */
+.gallery-slider::-webkit-scrollbar {
+  display: none;
+}
+.gallery-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ============================================
+   3D PERSPECTIVE UTILITY
+   ============================================ */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+/* ============================================
+   MARQUEE ANIMATION
+   ============================================ */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 25s linear infinite;
+}
+
+/* ============================================
+   FLOAT ANIMATION
+   ============================================ */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+/* ============================================
+   SHIMMER LOADING
+   ============================================ */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.8s infinite;
+}
+
+/* ============================================
+   MODAL BACKDROP
+   ============================================ */
+.modal-backdrop {
+  background: rgba(12, 12, 14, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ============================================
+   LIGHT SECTION OVERRIDES
+   ============================================ */
+.section-light {
+  background: #F8F7F5;
+  color: #0C0C0E;
+}
+
+.section-light .eyebrow {
+  color: #DC2626;
+}
+
+/* ============================================
+   SERVICE CARD IMAGE
+   ============================================ */
+.service-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.07);
+}
+
+/* ============================================
+   HERO BADGE PILL
+   ============================================ */
+.hero-badge {
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 9999px;
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ============================================
+   CONTACT FORM INPUTS
+   ============================================ */
+.form-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 16px;
+  font-size: 14.5px;
+  color: #0C0C0E;
+  font-family: var(--font-dm-sans);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.form-input:focus {
+  border-color: rgba(220, 38, 38, 0.4);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.08);
+}
+
+.form-input.error {
+  border-color: #DC2626;
+}
+
+.form-input option {
+  background: #FFFFFF;
+  color: #0C0C0E;
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "visiting-cards",
+    "title": "Visiting Cards",
+    "accentColor": "#06B6D4",
+    "description": "Premium business cards with matte, linen, or gold foil finishes that make a lasting professional statement.",
+    "coverImagePath": "/durga-files/visiting-cards/VC1.jpg",
+    "designs": [
+      {
+        "title": "VC1",
+        "imagePath": "/durga-files/visiting-cards/VC1.jpg"
+      },
+      {
+        "title": "VC2",
+        "imagePath": "/durga-files/visiting-cards/VC2.jpg"
+      },
+      {
+        "title": "VC3",
+        "imagePath": "/durga-files/visiting-cards/VC3.jpg"
+      },
+      {
+        "title": "VC4",
+        "imagePath": "/durga-files/visiting-cards/VC4.jpg"
+      },
+      {
+        "title": "VC5",
+        "imagePath": "/durga-files/visiting-cards/VC5.jpg"
+      },
+      {
+        "title": "VC6",
+        "imagePath": "/durga-files/visiting-cards/VC6.jpg"
+      },
+      {
+        "title": "VC7",
+        "imagePath": "/durga-files/visiting-cards/VC7.jpg"
+      }
+    ]
+  },
+  {
+    "id": "invitations",
+    "title": "Wedding Invitations",
+    "accentColor": "#EF4444",
+    "description": "Elegant wedding and celebration invitations featuring intricate borders, gold foil, and premium textures.",
+    "coverImagePath": "/durga-files/invitations/Inv 1.jpg",
+    "designs": [
+      {
+        "title": "Inv 1",
+        "imagePath": "/durga-files/invitations/Inv 1.jpg"
+      },
+      {
+        "title": "Inv 2",
+        "imagePath": "/durga-files/invitations/Inv 2.jpg"
+      },
+      {
+        "title": "Inv 3",
+        "imagePath": "/durga-files/invitations/Inv 3.jpg"
+      },
+      {
+        "title": "Inv 4",
+        "imagePath": "/durga-files/invitations/Inv 4.jpg"
+      },
+      {
+        "title": "Inv 5",
+        "imagePath": "/durga-files/invitations/Inv 5.jpg"
+      },
+      {
+        "title": "Inv 6",
+        "imagePath": "/durga-files/invitations/Inv 6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "kovil-invitation",
+    "title": "Temple Cards",
+    "accentColor": "#EAB308",
+    "description": "Traditional devotional temple festival invitations printed with rich ink density and sacred motifs.",
+    "coverImagePath": "/durga-files/kovil-invitation/inv 1.jpg",
+    "designs": [
+      {
+        "title": "Inv 1",
+        "imagePath": "/durga-files/kovil-invitation/inv 1.jpg"
+      },
+      {
+        "title": "Inv 2",
+        "imagePath": "/durga-files/kovil-invitation/inv 2.jpg"
+      },
+      {
+        "title": "Inv 3",
+        "imagePath": "/durga-files/kovil-invitation/inv 3.jpg"
+      },
+      {
+        "title": "Inv 4",
+        "imagePath": "/durga-files/kovil-invitation/inv 4.jpg"
+      },
+      {
+        "title": "Inv 5",
+        "imagePath": "/durga-files/kovil-invitation/inv 5.jpg"
+      },
+      {
+        "title": "Inv 6",
+        "imagePath": "/durga-files/kovil-invitation/inv 6.jpg"
+      },
+      {
+        "title": "Inv 7",
+        "imagePath": "/durga-files/kovil-invitation/inv 7.jpg"
+      },
+      {
+        "title": "Inv 8",
+        "imagePath": "/durga-files/kovil-invitation/inv 8.jpg"
+      }
+    ]
+  },
+  {
+    "id": "brouchers",
+    "title": "Brochures",
+    "accentColor": "#8B5CF6",
+    "description": "Sophisticated multi-fold corporate brochures designed to showcase your products and services with high-resolution clarity.",
+    "coverImagePath": "/durga-files/brouchers/broucher1.jpg",
+    "designs": [
+      {
+        "title": "Broucher1",
+        "imagePath": "/durga-files/brouchers/broucher1.jpg"
+      },
+      {
+        "title": "Broucher2",
+        "imagePath": "/durga-files/brouchers/broucher2.jpg"
+      },
+      {
+        "title": "Broucher3",
+        "imagePath": "/durga-files/brouchers/broucher3.jpg"
+      },
+      {
+        "title": "Broucher4",
+        "imagePath": "/durga-files/brouchers/broucher4.jpg"
+      },
+      {
+        "title": "Broucher5",
+        "imagePath": "/durga-files/brouchers/broucher5.jpg"
+      },
+      {
+        "title": "Broucher6",
+        "imagePath": "/durga-files/brouchers/broucher6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "hotel-menu-card",
+    "title": "Hotel Menu Cards",
+    "accentColor": "#EC4899",
+    "description": "Durable, high-quality printed menu cards with custom lamination to elevate the dining experience.",
+    "coverImagePath": "/durga-files/hotel-menu-card/hotel menu card 1.jpg",
+    "designs": [
+      {
+        "title": "Hotel menu card 1",
+        "imagePath": "/durga-files/hotel-menu-card/hotel menu card 1.jpg"
+      },
+      {
+        "title": "Hotel menu card 2",
+        "imagePath": "/durga-files/hotel-menu-card/hotel menu card 2.jpg"
+      },
+      {
+        "title": "Hotel menu card 3",
+        "imagePath": "/durga-files/hotel-menu-card/hotel menu card 3.jpg"
+      },
+      {
+        "title": "Hotel menu card 4",
+        "imagePath": "/durga-files/hotel-menu-card/hotel menu card 4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "signature-card",
+    "title": "Signature Cards",
+    "accentColor": "#6366F1",
+    "description": "Executive signature cards on ultra-premium heavy-weight textured stocks for personal or professional branding.",
+    "coverImagePath": "/durga-files/signature-card/1.jpg",
+    "designs": [
+      {
+        "title": "1",
+        "imagePath": "/durga-files/signature-card/1.jpg"
+      },
+      {
+        "title": "2",
+        "imagePath": "/durga-files/signature-card/2.jpg"
+      },
+      {
+        "title": "3",
+        "imagePath": "/durga-files/signature-card/3.jpg"
+      },
+      {
+        "title": "4",
+        "imagePath": "/durga-files/signature-card/4.jpg"
+      },
+      {
+        "title": "5",
+        "imagePath": "/durga-files/signature-card/5.jpg"
+      },
+      {
+        "title": "6",
+        "imagePath": "/durga-files/signature-card/6.jpg"
+      },
+      {
+        "title": "7",
+        "imagePath": "/durga-files/signature-card/7.jpg"
+      },
+      {
+        "title": "8",
+        "imagePath": "/durga-files/signature-card/8.jpg"
+      }
+    ]
+  },
+  {
+    "id": "banners",
+    "title": "Banners",
+    "accentColor": "#3B82F6",
+    "description": "High-impact outdoor and indoor banners with vibrant colors and durable, weather-resistant materials.",
+    "coverImagePath": "/durga-files/banners/banner 1.jpg",
+    "designs": [
+      {
+        "title": "Banner 1",
+        "imagePath": "/durga-files/banners/banner 1.jpg"
+      },
+      {
+        "title": "Banner 2",
+        "imagePath": "/durga-files/banners/banner 2.jpg"
+      },
+      {
+        "title": "Banner 3",
+        "imagePath": "/durga-files/banners/banner 3.jpg"
+      },
+      {
+        "title": "Banner 4",
+        "imagePath": "/durga-files/banners/banner 4.jpg"
+      },
+      {
+        "title": "Banner 5",
+        "imagePath": "/durga-files/banners/banner 5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "car-pass",
+    "title": "Car Passes",
+    "accentColor": "#F59E0B",
+    "description": "Custom car and vehicle passes with security printing, clear lettering, and durable finishes.",
+    "coverImagePath": "/durga-files/car-pass/car-pass.png",
+    "designs": [
+      {
+        "title": "Car Pass",
+        "imagePath": "/durga-files/car-pass/car-pass.png"
+      }
+    ]
+  },
+  {
+    "id": "pad",
+    "title": "Writing Pads",
+    "accentColor": "#10B981",
+    "description": "Branded office and prescription writing pads with clean grids, crisp logos, and premium easy-tear paper.",
+    "coverImagePath": "/durga-files/pad/pad 1.png",
+    "designs": [
+      {
+        "title": "Pad 1",
+        "imagePath": "/durga-files/pad/pad 1.png"
+      },
+      {
+        "title": "Pad 2",
+        "imagePath": "/durga-files/pad/pad 2.png"
+      }
+    ]
+  },
+  {
+    "id": "stickers",
+    "title": "Stickers",
+    "accentColor": "#14B8A6",
+    "description": "Precision-cut custom product and promotional stickers with gloss or matte weather-proof coatings.",
+    "coverImagePath": "/durga-files/stickers/sticker 1.jpg",
+    "designs": [
+      {
+        "title": "Sticker 1",
+        "imagePath": "/durga-files/stickers/sticker 1.jpg"
+      },
+      {
+        "title": "Sticker 2",
+        "imagePath": "/durga-files/stickers/sticker 2.jpg"
+      },
+      {
+        "title": "Sticker 3",
+        "imagePath": "/durga-files/stickers/sticker 3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "table-mate",
+    "title": "Table Mates",
+    "accentColor": "#F97316",
+    "description": "Custom printed table mats, calendars, and organizers designed to keep your brand visible daily.",
+    "coverImagePath": "/durga-files/table-mate/Table mate 2.jpg",
+    "designs": [
+      {
+        "title": "Table mate 2",
+        "imagePath": "/durga-files/table-mate/Table mate 2.jpg"
+      },
+      {
+        "title": "Table mate1",
+        "imagePath": "/durga-files/table-mate/Table mate1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "wallposters",
+    "title": "Wall Posters",
+    "accentColor": "#84CC16",
+    "description": "High-resolution large-format posters with brilliant color reproduction for advertising and display.",
+    "coverImagePath": "/durga-files/wallposters/wallposter-1.jpg",
+    "designs": [
+      {
+        "title": "Wallposter 1",
+        "imagePath": "/durga-files/wallposters/wallposter-1.jpg"
+      },
+      {
+        "title": "Wallposter 2",
+        "imagePath": "/durga-files/wallposters/wallposter-2.jpg"
+      },
+      {
+        "title": "Wallposter 3",
+        "imagePath": "/durga-files/wallposters/wallposter-3.jpg"
+      },
+      {
+        "title": "Wallposter 4",
+        "imagePath": "/durga-files/wallposters/wallposter-4.jpg"
+      },
+      {
+        "title": "Wallposter 5",
+        "imagePath": "/durga-files/wallposters/wallposter-5.jpg"
+      },
+      {
+        "title": "Wallposter 6",
+        "imagePath": "/durga-files/wallposters/wallposter-6.jpg"
+      }
+    ]
+  }
+]
