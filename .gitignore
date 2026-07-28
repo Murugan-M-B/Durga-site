@@ -5,3 +5,10 @@ out
 .DS_Store
 *.log
 next-env.d.ts
+tsconfig.tsbuildinfo
+# Root-level duplicates (canonical copies live in public/)
+/assets/
+/durga-files/
+# Dev tooling
+.agents/
+.claude/
