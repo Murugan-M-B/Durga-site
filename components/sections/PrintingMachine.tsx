@@ -52,7 +52,9 @@ export function PrintingMachine({ mouseX, mouseY }: Props) {
           viewBox="0 0 900 520"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]"
+          className="w-full h-auto"
+          shapeRendering="geometricPrecision"
+          textRendering="geometricPrecision"
           aria-label="CPC 8-Color Premium Offset Printing Machine"
         >
           <defs>
@@ -85,23 +87,16 @@ export function PrintingMachine({ mouseX, mouseY }: Props) {
 
             {/* 3D Floor shadow radial gradient */}
             <radialGradient id="mg-floor-grad" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="rgba(0,0,0,0.4)" />
-              <stop offset="60%" stopColor="rgba(0,0,0,0.15)" />
+              <stop offset="0%" stopColor="rgba(0,0,0,0.35)" />
+              <stop offset="60%" stopColor="rgba(0,0,0,0.12)" />
               <stop offset="100%" stopColor="rgba(0,0,0,0)" />
-            </radialGradient>
-
-            {/* Soft background ambient halo (Spotlight) */}
-            <radialGradient id="mg-spotlight" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="rgba(255,255,255,0.7)" />
-              <stop offset="60%" stopColor="rgba(255,255,255,0.15)" />
-              <stop offset="100%" stopColor="rgba(255,255,255,0)" />
             </radialGradient>
 
             {/* 15s Reflection sweep gradient */}
             <linearGradient id="mg-sweep" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stopColor="white" stopOpacity="0" />
               <stop offset="35%" stopColor="white" stopOpacity="0" />
-              <stop offset="50%" stopColor="white" stopOpacity="0.18" />
+              <stop offset="50%" stopColor="white" stopOpacity="0.14" />
               <stop offset="65%" stopColor="white" stopOpacity="0" />
               <stop offset="100%" stopColor="white" stopOpacity="0" />
             </linearGradient>
@@ -115,15 +110,7 @@ export function PrintingMachine({ mouseX, mouseY }: Props) {
             <mask id="reflection-mask">
               <rect x="0" y="446" width="900" height="120" fill="url(#reflection-fade)" />
             </mask>
-
-            {/* Drop shadow filter */}
-            <filter id="mg-shadow" x="-10%" y="-10%" width="120%" height="130%">
-              <feDropShadow dx="0" dy="12" stdDeviation="16" floodColor="#000" floodOpacity="0.55" />
-            </filter>
           </defs>
-
-          {/* ── BACKGROUND SPOTLIGHT HALO ── */}
-          <ellipse cx="450" cy="300" rx="380" ry="160" fill="url(#mg-spotlight)" opacity="0.65" />
 
           {/* ── DYNAMIC SHIFTING FLOOR SHADOW ── */}
           <motion.ellipse
@@ -139,12 +126,12 @@ export function PrintingMachine({ mouseX, mouseY }: Props) {
             cy="476"
             rx="330"
             ry="12"
-            fill="rgba(0,0,0,0.5)"
+            fill="rgba(0,0,0,0.4)"
             style={{ x: sShadowX }}
           />
 
           {/* ── FLOOR REFLECTION (Mirrored & Faded) ── */}
-          <g mask="url(#reflection-mask)" opacity="0.45" transform="translate(0, 892) scale(1, -1)">
+          <g mask="url(#reflection-mask)" opacity="0.4" transform="translate(0, 892) scale(1, -1)">
              <rect x="55" y="250" width="740" height="198" rx="8" fill="url(#mg-chassis)" />
              <rect x="55" y="238" width="740" height="18" rx="4" fill="url(#mg-rail)" />
              <rect x="55" y="240" width="740" height="3" rx="1" fill="url(#mg-red)" opacity="0.9" />
@@ -159,10 +146,8 @@ export function PrintingMachine({ mouseX, mouseY }: Props) {
              })}
           </g>
 
-          {/* ── SHADOW FILTER LAYER FOR CHASSIS ── */}
-          <g filter="url(#mg-shadow)">
-
-            {/* ════ LAYER 1: BACKGROUND CHASSIS (Deep Parallax) ════ */}
+          {/* ── MAIN MACHINE VECTOR GRAPHICS ── */}
+          <g>
             <motion.g style={{ x: sChassisX, y: sChassisY }}>
               {/* Feet (firmly grounded visual contact) */}
               {[90, 210, 350, 490, 630, 760].map((x, i) => (

@@ -30,13 +30,13 @@ const PRODUCTS = [
     src: "/durga-files/visiting-cards/VC2.jpg",
     label: "Visiting Card",
     style: { top: "4%", right: "4%", width: 105, height: 145 },
-    rotate: 5, dur: 14.2, delay: 1.5, zIndex: 10, zDepth: -30, blur: 1.5,
+    rotate: 5, dur: 14.2, delay: 1.5, zIndex: 10, zDepth: -30, blur: 0,
   },
   {
     src: "/durga-files/signature-card/1.jpg",
     label: "Signature Card",
     style: { bottom: "16%", left: "6%", width: 90, height: 128 },
-    rotate: -5, dur: 13.5, delay: 2.5, zIndex: 20, zDepth: 15, blur: 0.5,
+    rotate: -5, dur: 13.5, delay: 2.5, zIndex: 20, zDepth: 15, blur: 0,
   },
   {
     src: "/durga-files/brouchers/broucher2.jpg",
@@ -296,6 +296,9 @@ export function Hero() {
             y: springScrollYOffset,
             opacity: springScrollOpacity,
             transformStyle: "preserve-3d",
+            willChange: "transform",
+            WebkitBackfaceVisibility: "hidden",
+            backfaceVisibility: "hidden",
           }}
           className="relative w-full h-[400px] sm:h-[480px] md:h-[540px] lg:h-[600px]"
         >
@@ -311,12 +314,12 @@ export function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            style={{ transformStyle: "preserve-3d" }}
+            style={{ transformStyle: "preserve-3d", willChange: "transform" }}
             className="w-full h-full"
           >
             {/* Mouse Parallax Wrapper */}
             <motion.div
-              style={{ x: sceneX, y: sceneY, transformStyle: "preserve-3d", perspective: "1200px" }}
+              style={{ x: sceneX, y: sceneY, transformStyle: "preserve-3d", perspective: "1200px", willChange: "transform" }}
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.05, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
