@@ -23,25 +23,25 @@ const PRODUCTS = [
   {
     src: "/durga-files/invitations/Inv%201.jpg",
     label: "Wedding Invite",
-    style: { top: "6%", left: "4%", width: 135, height: 86 },
+    style: { top: "2%", left: "2%", width: 115, height: 76 },
     rotate: -6, dur: 12.0, delay: 0, zIndex: 30, zDepth: 45, blur: 0,
   },
   {
     src: "/durga-files/visiting-cards/VC2.jpg",
     label: "Visiting Card",
-    style: { top: "4%", right: "4%", width: 105, height: 145 },
+    style: { top: "2%", right: "2%", width: 90, height: 125 },
     rotate: 5, dur: 14.2, delay: 1.5, zIndex: 10, zDepth: -30, blur: 0,
   },
   {
     src: "/durga-files/signature-card/1.jpg",
     label: "Signature Card",
-    style: { bottom: "16%", left: "6%", width: 90, height: 128 },
+    style: { bottom: "12%", left: "3%", width: 80, height: 112 },
     rotate: -5, dur: 13.5, delay: 2.5, zIndex: 20, zDepth: 15, blur: 0,
   },
   {
     src: "/durga-files/brouchers/broucher2.jpg",
     label: "Brochure",
-    style: { bottom: "12%", right: "8%", width: 130, height: 90 },
+    style: { bottom: "8%", right: "4%", width: 110, height: 76 },
     rotate: 4, dur: 11.0, delay: 3.2, zIndex: 25, zDepth: 30, blur: 0,
   },
 ];
@@ -294,7 +294,7 @@ export function Hero() {
             scale: springScrollScale,
             rotateX: springScrollRotateX,
             y: springScrollYOffset,
-            opacity: springScrollOpacity,
+            opacity: 1,
             transformStyle: "preserve-3d",
             willChange: "transform",
             WebkitBackfaceVisibility: "hidden",
@@ -340,7 +340,7 @@ export function Hero() {
                   <motion.div
                     key={i}
                     className="absolute rounded-xl overflow-hidden cursor-pointer select-none bg-white p-1.5 
-                               hidden sm:block transition-shadow duration-300"
+                               block transition-shadow duration-300"
                     style={{
                       ...p.style,
                       x: cardX,
