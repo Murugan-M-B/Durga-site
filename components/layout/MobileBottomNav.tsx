@@ -1,13 +1,12 @@
 "use client";
 
-import { Home, LayoutGrid, Image as ImageIcon, Phone, Star } from "lucide-react";
+import { Home, Image as ImageIcon, Phone, Star } from "lucide-react";
 import { navLinks } from "@/lib/data";
 
 const mobileLinks = [
   { href: "#home", label: "Home", icon: Home },
-  { href: "#services", label: "Services", icon: LayoutGrid },
-  { href: "#gallery", label: "Gallery", icon: ImageIcon },
   { href: "#signature", label: "Signature", icon: Star },
+  { href: "#gallery", label: "Gallery", icon: ImageIcon },
   { href: "#contact", label: "Contact", icon: Phone },
 ];
 

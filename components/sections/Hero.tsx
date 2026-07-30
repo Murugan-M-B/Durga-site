@@ -440,7 +440,7 @@ export function Hero() {
 
       {/* ════ SCROLL CUE ════ */}
       <motion.a
-        href="#heritage"
+        href="#signature"
         className="absolute bottom-[4.5rem] left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5
                    text-slate-400 hover:text-slate-600 transition-colors z-30"
         animate={{ y: [0, 6, 0] }}

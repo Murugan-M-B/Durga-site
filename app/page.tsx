@@ -4,9 +4,7 @@ import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { MobileBottomNav } from "@/components/layout/MobileBottomNav";
 import { Hero } from "@/components/sections/Hero";
 import { Stats } from "@/components/sections/Stats";
-import { WhyUs } from "@/components/sections/WhyUs";
 import { Signature } from "@/components/sections/Signature";
-import { Services } from "@/components/sections/Services";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Gallery } from "@/components/sections/Gallery";
 import { FAQ } from "@/components/sections/FAQ";
@@ -20,9 +18,7 @@ export default function Home() {
       <main className="pb-24 lg:pb-0">
         <Hero />
         <Stats />
-        <WhyUs />
         <Signature />
-        <Services />
         <Testimonials />
         <Gallery />
         <FAQ />

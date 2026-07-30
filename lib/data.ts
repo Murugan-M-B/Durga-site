@@ -188,8 +188,6 @@ export const faqs = [
 
 export const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#heritage", label: "Heritage" },
-  { href: "#services", label: "Services" },
   { href: "#signature", label: "Signature Card" },
   { href: "#gallery", label: "Gallery" },
   { href: "#contact", label: "Contact" },
